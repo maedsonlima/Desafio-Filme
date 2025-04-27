@@ -9,12 +9,28 @@ public class Titulo {
     private int duracaoEmMinutos;
 
 
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
+    public Titulo() {
+    }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
     public void setAnoDeLancamento(int anoDeLancamento) {
         this.anoDeLancamento = anoDeLancamento;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
     }
 
     public void setIncluidoNoPlano(boolean incluidoNoPlano) {
@@ -38,6 +54,7 @@ public class Titulo {
         somaDasAvaliacoes += nota;
         totalDeAvaliacoes++;
     }
+
 
     public int getDuracaoEmMinutos() {
         return duracaoEmMinutos;
